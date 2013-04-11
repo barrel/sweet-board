@@ -11,10 +11,8 @@ The Barrel Sweet Board is an app that uses the twilio api to retreive your sms l
 2. Insert your twilio account credentials into config.php
 
 ```php
-<?php
 	$token = 'your-token-here';
 	$sid = 'your-sid-here';
-?>
 ```
 
 These can be found by going to your twilio [account page](https://www.twilio.com/user/account) and copy & pasting the "AUTH TOKEN" & "ACCOUNT SID" into the file. Then you are set!
@@ -22,7 +20,7 @@ These can be found by going to your twilio [account page](https://www.twilio.com
 
 ## Configurations
 
-You can add text reply to your users by editing the reply.php page.
+You can add text reply to your users by editing reply.php
 
 ```xml
 <Response>
@@ -32,8 +30,6 @@ You can add text reply to your users by editing the reply.php page.
 
 You can edit the number of texts that are included in the vintage sweetness by changing the default in config.php
 
-```xml
-<?php
+```php
 	$vintage_texts = 10;
-?>
 ```
