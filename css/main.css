@@ -28,9 +28,6 @@ body {
   color: #363636;
   overflow: hidden;
 }
-body.test {
-  overflow-y: scroll;
-}
 .wrapper {
   overflow: hidden;
   background: #F6F6F6;
@@ -39,9 +36,6 @@ body.test {
 }
 .wrapper article:first-child {
   padding-top: 90px;
-}
-.test .wrapper {
-  height: auto;
 }
 h1 {
   font-family: "Benton", 'helvetica neue', helvetica;
@@ -87,9 +81,6 @@ article blockquote {
   margin: 0;
   padding: 20px 0;
 }
-.test article blockquote {
-  font-size: 1.5em;
-}
 article blockquote em {
   font-weight: 900;
 }
@@ -111,21 +102,15 @@ article abbr.timeago {
   display: block;
   color: #363636;
 }
-.test article abbr.timeago {
-  font-size: 0.5em;
-}
 article.new {
   margin-left: 100%;
 }
 article.hidden {
   display: none;
 }
-.test article.hidden {
-  display: block;
-}
 section.vintage {
   *zoom: 1;
-  position: absolute;
+  position: fixed;
   border-bottom: #333 1px solid;
   color: #a9a9a9;
   background-color: #282828;
@@ -149,10 +134,6 @@ section.vintage:after {
 section.vintage:after {
   clear: both;
 }
-.test section.vintage {
-  position: fixed;
-  bottom: 51px;
-}
 section.vintage h3 {
   font-family: "Benton", 'helvetica neue', helvetica;
   text-align: center;
@@ -172,10 +153,6 @@ section.vintage h3 {
   position: relative;
   margin: -1.4em auto 0;
   z-index: 99999;
-}
-.test section.vintage h3 {
-  font-size: 0.7em;
-  line-height: 1.4em;
 }
 section.vintage h3 em {
   font-style: italic;
@@ -217,9 +194,6 @@ section.vintage ul.slider li blockquote {
   color: #a9a9a9;
   padding: 40px 50px 30px;
 }
-.test section.vintage ul.slider li blockquote {
-  font-size: 1.7em;
-}
 section.vintage ul.slider li blockquote em {
   font-weight: 900;
 }
@@ -252,11 +226,24 @@ footer:after {
 footer:after {
   clear: both;
 }
-.test footer {
-  font-size: 0.7em;
-}
-footer span {
+footer span,
+footer span a {
   font-weight: 200;
   color: white;
   margin-left: 10px;
+  text-decoration: none;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  html {
+    overflow: hidden;
+  }
+  body {
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  .wrapper {
+    height: auto;
+    padding-bottom: 400px;
+  }
 }

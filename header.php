@@ -8,7 +8,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>Sweet Board</title>
 		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=1000px">
 		
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/fonts.css">

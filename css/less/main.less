@@ -11,9 +11,6 @@ body {
 	text-align:center;
 	color:#363636;
 	overflow:hidden;
-	&.test {
-		overflow-y:scroll;
-	}
 }
 
 .wrapper {
@@ -24,9 +21,6 @@ body {
 		padding-top:90px;
 	}
 	height:100%;
-	.test & {
-		height:auto;
-	}
 }
 
 h1 {
@@ -68,9 +62,6 @@ article {
 		line-height:140%;
 		margin:0;
 		padding:20px 0;
-		.test & {
-			font-size:1.5em;
-		}
 		em {
 			font-weight:900;
 		}
@@ -88,24 +79,18 @@ article {
 		border:none;
 		display:block;
 		color:#363636;
-		.test & {
-			font-size:0.5em;
-		}
 	}
 	&.new {
 		margin-left:100%;
 	}
 	&.hidden {
 		display:none;
-		.test & {
-			display:block;
-		}
 	}
 }
 
 section.vintage {
 	.clearfix;
-	position:absolute;
+	position:fixed;
 	border-bottom:#333 1px solid;
 	color:#a9a9a9;
 	background-color: rgb(40, 40, 40);
@@ -119,10 +104,6 @@ section.vintage {
 	margin:0;
 	padding:0;
 	visibility:hidden;
-	.test & {
-		position:fixed;
-		bottom:51px;
-	}
 	h3 {
 		font-family:"Benton", 'helvetica neue', helvetica;
 		text-align:center;
@@ -143,10 +124,6 @@ section.vintage {
 		position:relative;
 		margin:-1.4em auto 0;
 		z-index:99999;
-		.test & {
-			font-size:0.7em;
-			line-height:1.4em;
-		}
 		em {
 			font-style:italic;
 			text-transform:capitalize;
@@ -176,9 +153,6 @@ section.vintage {
 				margin:0;
 				color:#a9a9a9;
 				padding:40px 50px 30px;
-				.test & {
-					font-size:1.7em;
-				}
 				em {
 					font-weight:900;
 				}
@@ -206,12 +180,31 @@ footer {
 	font-weight:400;
 	font-family:'Benton', 'helvetica neue', helvetica;
 	text-transform:uppercase;
-	.test & {
-		font-size:0.7em;
-	}
-	span {
+	span, span a {
 		font-weight:200;
 		color:white;
 		margin-left:10px;
+		text-decoration:none;
+	}
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px), only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	html {
+		overflow:hidden;
+	}
+
+	body {
+		overflow:hidden;
+		overflow-y:scroll;
+	}
+	.wrapper {
+		height:auto;
+		padding-bottom:400px;
 	}
 }
