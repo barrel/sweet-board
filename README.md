@@ -18,3 +18,14 @@ The Barrel Sweet Board is an app that uses the twilio api to retreive your sms l
 ```
 
 These can be found by going to your twilio [account page](https://www.twilio.com/user/account) and copy & pasting the "AUTH TOKEN" & "ACCOUNT SID" into the file. Then you are set!
+
+
+## Features
+
+You can add text reply to your users by editing the reply.php page.
+
+```xml
+<Response>
+	<Sms>Hello, thanks for texting the barrel wallboard!</Sms>
+</Response>
+```
