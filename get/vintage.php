@@ -7,7 +7,7 @@
 	foreach ($client->account->sms_messages as $message) {
 		$status= $message->status;
 		if ($status=='received'){
-			if ($textcount > 6 && $textcount < 14){
+			if ($textcount > 6 && $textcount < ($vintage_texts + 5)){
 				$time = date('c', strtotime($message->date_created));
 				$body = $message->body;
 				$smsid= $message->sid;
