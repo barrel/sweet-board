@@ -1,5 +1,6 @@
 var message_ids = [];
 var slider;
+var animating = false;
 
 function getSlider(){
 	$.ajax({
@@ -19,7 +20,21 @@ function getSlider(){
 			infiniteLoop: true,
 			mode: 'horizontal'
 		});
-		$('.vintage').css('visibility', 'visible');
+		
+		// make vintage texts hide if mobile and landscape
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			if (animating == false){
+				if (window.orientation==90 || window.orientation==-90){
+					hideVintage();
+				} else {
+					$('.vintage').css('visibility', 'visible');
+				}
+			} else {
+				$('.vintage').css('visibility', 'visible');
+			}
+		} else {
+			$('.vintage').css('visibility', 'visible');
+		}
 	});
 }
 
@@ -77,11 +92,49 @@ function update(){
 	});
 }
 
+function hideVintage(){
+	animating = true;
+	$('.vintage').animate({marginBottom: -($('.vintage').outerHeight() -($('.vintage h3').outerHeight()/2)) }, 500, function(){
+		animating = false;
+		$('.vintage').addClass('hiding');
+		$('.vintage').css('visibility', 'visible');
+	});
+}
+
+function showVintage(){
+	animating = true;
+	$('.vintage').animate({marginBottom: 0 }, 500, function(){
+		animating = false;
+		$('.vintage').removeClass('hiding');
+	});
+}
+
 jQuery(document).ready(function() {
 	$('article').each(function(){
 		var id = $(this).attr('data-sid');
 		message_ids.push(id);
 	});
+	
+	// make vintage texts hide if mobile and landscape
+	window.addEventListener("orientationchange", function() {
+		if (animating == false){
+			if (window.orientation==90 || window.orientation==-90){
+				hideVintage();
+			}
+		}
+	}, false);
+	
+	$('.vintage h3').click(function(){
+		if (animating == false){
+			if ($('.vintage').hasClass('hiding')){
+				showVintage();
+			} else {
+				hideVintage();
+			}
+		}
+	})
+	
+	
 	$("abbr.timeago").timeago();
 	$('article').emoji(64);
 	setTimeout(function(){
