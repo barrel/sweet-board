@@ -2,7 +2,9 @@
 
 ## About
 
-The Barrel Sweet Board is an app that uses the twilio api to retreive your sms log and display it in a simple, readable format. The app auto updates when new texts are recieved.
+The Barrel Sweet Board is an app that uses the twilio api to retreive your sms log and display it in a simple, readable format. The app auto updates when new texts are recieved
+
+Read the [story](http://www.barrelny.com/blog/sweet-board-sketch-to-prototype-in-5-hours/) behind the Sweet Board.
 
 
 ## Installation
@@ -33,3 +35,11 @@ You can edit the number of texts that are included in the vintage sweetness by c
 ```php
 	$vintage_texts = 10;
 ```
+
+
+
+### Credits
+
+- Built by [Barrel](http://www.barrelny.com/). 
+- Concept by [Peter Kang](http://www.twitter.com/peterkang34).
+- Design & development by [Jessica Frazelle](http://www.twitter.com/frazelledazzell).
