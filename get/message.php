@@ -1,7 +1,7 @@
 <?php
 	$message_id = $_REQUEST['id'];
 	require('../twilio.php');
-	include('../api-key.php');
+	include('../config.php');
 	$client = new Services_Twilio($sid, $token);
 
 	$message = $client->account->sms_messages->get($message_id);

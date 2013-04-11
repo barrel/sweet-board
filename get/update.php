@@ -1,6 +1,6 @@
 <?php
 	require('../twilio.php');
-	include('../api-key.php');
+	include('../config.php');
 	$client = new Services_Twilio($sid, $token);
 	$id_array=array();
 	foreach ($client->account->sms_messages as $message) {

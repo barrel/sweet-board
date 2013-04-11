@@ -1,6 +1,6 @@
 <?php
 	require('twilio.php');
-	include('api-key.php');
+	include('config.php');
 	$client = new Services_Twilio($sid, $token);
 	$textcount=0;
 	
