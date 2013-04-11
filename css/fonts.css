@@ -1,0 +1,251 @@
+/* Benton Thin */
+
+@font-face{
+	font-family: 'Benton';
+	src: url('fonts/bs_thin.eot');
+	font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Benton';
+	src:url(http://:/) format("No-IE-404"),
+        url('fonts/bs_thin.ttf') format('truetype'),
+        url('fonts/bs_thin.svg') format('svg');
+    font-weight: 100;
+    font-style: normal;	
+} 
+
+/* Benton Thin Italic */
+
+@font-face{
+	font-family: 'Benton';
+	src: url('fonts/bs_thin_it.eot');
+	font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: 'Benton';
+	src:url(http://:/) format("No-IE-404"),
+        url('fonts/bs_thin_it.ttf') format('truetype'),
+        url('fonts/bs_thin_it.svg') format('svg');
+    font-weight: 100;
+    font-style: italic;	
+}
+
+/* Benton Extra-Light */
+
+@font-face{
+	font-family: 'Benton';
+	src: url('fonts/bs_xlight.eot');
+	font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Benton';
+	src:url(http://:/) format("No-IE-404"),
+        url('fonts/bs_xlight.ttf') format('truetype'),
+        url('fonts/bs_xlight.svg') format('svg');
+    font-weight: 200;
+    font-style: normal;	
+}
+
+/* Benton Extra-Light Italic */
+
+@font-face{
+	font-family: 'Benton';
+	src: url('fonts/bs_xlight_it.eot');
+	font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: 'Benton';
+	src:url(http://:/) format("No-IE-404"),
+        url('fonts/bs_xlight_it.ttf') format('truetype'),
+        url('fonts/bs_xlight_it.svg') format('svg');
+    font-weight: 200;
+    font-style: italic;	
+}
+
+/* Benton Light */
+
+@font-face{
+	font-family: 'Benton';
+	src: url('fonts/bs_light.eot');
+	font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Benton';
+	src:url(http://:/) format("No-IE-404"),
+        url('fonts/bs_light.ttf') format('truetype'),
+        url('fonts/bs_light.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Benton Light Italic */
+
+@font-face{
+	font-family: 'Benton';
+	src: url('fonts/bs_light_it.eot');
+	font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: 'Benton';
+	src:url(http://:/) format("No-IE-404"),
+        url('fonts/bs_light_it.ttf') format('truetype'),
+        url('fonts/bs_light_it.svg') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Benton Book */
+
+@font-face{
+	font-family: 'Benton';
+	src: url('fonts/bs_book.eot');
+	font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Benton';
+	src:url(http://:/) format("No-IE-404"),
+        url('fonts/bs_book.ttf') format('truetype'),
+        url('fonts/bs_book.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Benton Book Italic */
+
+@font-face{
+	font-family: 'Benton';
+	src: url('fonts/bs_book_it.eot');
+	font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: 'Benton';
+	src:url(http://:/) format("No-IE-404"),
+        url('fonts/bs_book_it.ttf') format('truetype'),
+        url('fonts/bs_book_it.svg') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Benton Medium */
+
+@font-face{
+	font-family: 'Benton';
+	src: url('fonts/bs_medium.eot');
+	font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Benton';
+	src:url(http://:/) format("No-IE-404"),
+        url('fonts/bs_medium.ttf') format('truetype'),
+        url('fonts/bs_medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Benton Medium Italic */
+
+@font-face{
+	font-family: 'Benton';
+	src: url('fonts/bs_medium_it.eot');
+	font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: 'Benton';
+	src:url(http://:/) format("No-IE-404"),
+        url('fonts/bs_medium_it.ttf') format('truetype'),
+        url('fonts/bs_medium_it.svg') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Benton Bold */
+
+@font-face{
+	font-family: 'Benton';
+	src: url('fonts/bs_bold.eot');
+	font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Benton';
+	src:url(http://:/) format("No-IE-404"),
+        url('fonts/bs_bold.ttf') format('truetype'),
+        url('fonts/bs_bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Benton Bold Italic */
+
+@font-face{
+	font-family: 'Benton';
+	src: url('fonts/bs_bold_it.eot');
+	font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: 'Benton';
+	src:url(http://:/) format("No-IE-404"),
+        url('fonts/bs_bold_it.ttf') format('truetype'),
+        url('fonts/bs_bold_it.svg') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Benton Black */
+
+@font-face{
+	font-family: 'Benton';
+	src: url('fonts/bs_black.eot');
+	font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Benton';
+	src:url(http://:/) format("No-IE-404"),
+        url('fonts/bs_black.ttf') format('truetype'),
+        url('fonts/bs_black.svg') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Benton Black Italic */
+
+@font-face{
+	font-family: 'Benton';
+	src: url('fonts/bs_black_it.eot');
+	font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: 'Benton';
+	src:url(http://:/) format("No-IE-404"),
+        url('fonts/bs_black_it.ttf') format('truetype'),
+        url('fonts/bs_black_it.svg') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
