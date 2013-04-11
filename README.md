@@ -9,8 +9,8 @@ Read the [story](http://www.barrelny.com/blog/sweet-board-sketch-to-prototype-in
 
 ## Installation
 
-1. [Download files](https://github.com/barrel/sweet-board/archive/master.zip)
-2. Insert your twilio account credentials into [config.php](https://github.com/barrel/sweet-board/blob/master/config.php)
+1. [Download files](https://github.com/barrel/sweet-board/archive/master.zip).
+2. Insert your twilio account credentials into [config.php](https://github.com/barrel/sweet-board/blob/master/config.php).
 
 ```php
 	$token = 'your-token-here';
@@ -22,7 +22,7 @@ These can be found by going to your twilio [account page](https://www.twilio.com
 
 ## Configurations
 
-You can add text reply to your users by editing [reply.php](https://github.com/barrel/sweet-board/blob/master/reply.php)
+You can add a text reply to your users by editing [reply.php](https://github.com/barrel/sweet-board/blob/master/reply.php).
 
 ```xml
 <Response>
@@ -30,7 +30,7 @@ You can add text reply to your users by editing [reply.php](https://github.com/b
 </Response>
 ```
 
-You can edit the number of texts that are included in the vintage sweetness by changing the default in [config.php](https://github.com/barrel/sweet-board/blob/master/config.php)
+You can edit the number of texts that are included in the vintage sweetness by changing the default in [config.php](https://github.com/barrel/sweet-board/blob/master/config.php).
 
 ```php
 	$vintage_texts = 10;
